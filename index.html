@@ -1,232 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alien Relaxation Station • Support</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-
-  <style>
-    :root {
-      /* ✨ Theme Colors — tweak these to instantly restyle the site */
-      --color-bg: #f5faff;
-      --color-primary: #34e1a1; /* playful neon‑mint */
-      --color-secondary: #6c63ff; /* cosmic purple */
-      --color-accent: #ffca3a; /* starlight yellow */
-      --color-text: #333333;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: "Poppins", sans-serif;
-      background: var(--color-bg);
-      color: var(--color-text);
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-      color: #ffffff;
-      padding: 3rem 1rem 4rem;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    /* fun floating stars */
-    header::before,
-    header::after {
-      content: "";
-      position: absolute;
-      width: 200%;
-      height: 200%;
-      top: -50%;
-      left: -50%;
-      background-image: radial-gradient(#ffffff55 1px, transparent 1px);
-      background-size: 30px 30px;
-      animation: drift 60s linear infinite;
-      pointer-events: none;
-    }
-    header::after {
-      animation-duration: 90s;
-      opacity: 0.5;
-    }
-    @keyframes drift {
-      from {
-        transform: translate(0, 0);
-      }
-      to {
-        transform: translate(50%, 50%);
-      }
-    }
-
-    header h1 {
-      font-size: 2.75rem;
-      letter-spacing: 1px;
-    }
-    header p {
-      margin-top: 0.75rem;
-      font-size: 1.2rem;
-    }
-
-    .btn {
-      display: inline-block;
-      background: var(--color-accent);
-      color: #000000;
-      padding: 0.75rem 1.5rem;
-      border-radius: 999px;
-      font-weight: 600;
-      text-decoration: none;
-      margin-top: 2rem;
-      transition: transform 0.2s;
-    }
-    .btn:hover {
-      transform: translateY(-4px);
-    }
-
-    section {
-      max-width: 900px;
-      margin: 2.5rem auto;
-      padding: 0 1rem;
-    }
-    section h2 {
-      color: var(--color-secondary);
-      margin-bottom: 0.85rem;
-      font-size: 1.75rem;
-    }
-
-    .card {
-      background: #ffffff;
-      border-radius: 1rem;
-      padding: 1.75rem 1.5rem;
-      margin-bottom: 1.75rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    }
-
-    .faq h3 {
-      color: var(--color-primary);
-      font-size: 1.15rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .contact a {
-      color: var(--color-secondary);
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1.5rem 0 2rem;
-      font-size: 0.875rem;
-      color: #777777;
-    }
-
-    /* 🌒 Dark‑mode adjustment  */
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --color-bg: #121212;
-        --color-text: #eeeeee;
-      }
-      .card {
-        background: #1e1e1e;
-      }
-      header {
-        background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
-      }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Make calm music by dragging friendly animals • Alien Relaxation Station</title>
+  <meta name="description" content="Alien Relaxation Station is a chill, tactile music toy for iPhone. Drag animals to shape melodies, loops, and soothing patterns—no music theory needed.">
+  <meta property="og:title" content="Make calm music by dragging friendly animals • Alien Relaxation Station">
+  <meta property="og:description" content="Alien Relaxation Station is a chill, tactile music toy for iPhone. Drag animals to shape melodies, loops, and soothing patterns—no music theory needed.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{SITE_ORIGIN}}/">
+  <meta property="og:image" content="{{SITE_ORIGIN}}/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/img/favicon.svg">
+  <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>Alien Relaxation Station</h1>
-    <p>Create cosmic calm through playful music‑making ✨</p>
-    <a href="#contact" class="btn">Need Help? Contact Us</a>
+<div class="container">
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="/"><span aria-hidden="true">🛸</span> Alien Relaxation Station</a>
+    <div class="links">
+      <a href="/#features">Features</a>
+      <a href="/#how">How it works</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/support.html">Support</a>
+      <a href="https://apps.apple.com/app/idYOUR_APP_ID" class="btn">View on App Store</a>
+    </div>
+  </nav>
+
+  <header class="header">
+    <div class="hero">
+      <div class="card">
+        <h1>Make calm music by dragging friendly animals</h1>
+        <p class="lead">Tap, drag, and loop. That’s it. Alien Relaxation Station turns simple gestures into soothing melodies—relaxing, creative, and delightfully approachable.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
+          <a class="btn" href="https://apps.apple.com/app/idYOUR_APP_ID">View on App Store</a>
+          <a class="btn secondary" href="/support.html">Get Support</a>
+        </div>
+        <div class="notice" style="margin-top:14px">
+          <strong>We respect your privacy.</strong> ARS collects <em>no</em> personal data and uses no third‑party analytics or ads.
+        </div>
+      </div>
+      <figure class="kv card" aria-label="App preview">
+        <img src="/assets/img/ars-icon.jpeg" alt="Alien Relaxation Station Icon" />
+      </figure>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About the App</h2>
-    <div class="card">
-      <p><strong>Version&nbsp;1.0</strong> — Released August&nbsp;2025</p>
-      <p>
-        Alien Relaxation Station (ARS) is a whimsical, interactive music
-        playground designed to help you unwind. Drag friendly farm animals into
-        our UFO beam, mix relaxing loops, and paint your own sonic landscape –
-        no musical experience required.
-      </p>
+  <section id="features">
+    <h2>Why people love it</h2>
+    <div class="grid-3">
+      <div class="card feature">
+        <h3>Instantly musical</h3>
+        <p>Every note is tuned to sound good together. Just drag animals—no scales or theory required.</p>
+      </div>
+      <div class="card feature">
+        <h3>Relaxing by design</h3>
+        <p>Smooth visuals, gentle interactions, and a focus on flow—great for winding down or getting into the zone.</p>
+      </div>
+      <div class="card feature">
+        <h3>Simple, honest app</h3>
+        <p>No logins, no accounts, no tracking, and no ads. Your creations live on your device.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <h2>How it works</h2>
+    <div class="grid-2">
+      <div class="card feature">
+        <h3>Tap & drag animals</h3>
+        <p>Positions map to pitch—move right for time, up for notes. Drop into the Chill Zone to pause a part.</p>
+      </div>
+      <div class="card feature">
+        <h3>Loop the groove</h3>
+        <p>Flip on the built‑in 8‑beat loop toy to evolve patterns while you play.</p>
+      </div>
     </div>
   </section>
 
   <section id="faq">
-    <h2>Frequently Asked Questions</h2>
-
-    <div class="card faq">
-      <h3>How do I unlock new animals?</h3>
-      <p>
-        Just keep playing! Completing simple challenges unlocks additional
-        critters and brand‑new sounds.
-      </p>
-    </div>
-
-    <div class="card faq">
-      <h3>Is ARS free?</h3>
-      <p>
-        Yes! ARS is free to download and play. Optional in‑app purchases let you
-        access extra sound packs and support future development.
-      </p>
-    </div>
-
-    <div class="card faq">
-      <h3>How do I restore purchases?</h3>
-      <p>
-        On the main menu, tap <em>Settings → Restore Purchases</em>. Make sure
-        you’re signed in with the same Apple ID used for purchase.
-      </p>
-    </div>
-
-    <div class="card faq">
-      <h3>The audio stutters or lags. What should I do?</h3>
-      <p>
-        Ensure your device isn’t in Low Power Mode and close other intensive
-        apps. If issues persist, <a href="#contact">contact us</a> – we’re here
-        to help.
-      </p>
+    <h2>FAQ</h2>
+    <div class="card feature">
+      <h3>Does ARS collect any data?</h3>
+      <p>No. ARS collects no personal data and uses no third‑party analytics or advertising SDKs.</p>
+      <h3>Which devices are supported?</h3>
+      <p>iPhone is the primary target. See the App Store page for current device and OS compatibility.</p>
+      <h3>Can I share what I make?</h3>
+      <p>Yes—save a screen recording, or share snapshots in our community spaces.</p>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact &amp; Support</h2>
-    <div class="card contact">
-      <p>
-        Encountered an issue? Have feedback or feature ideas? We’d love to hear
-        from you.
-      </p>
-      <p>
-        Email us at
-        <a href="mailto:support@alienemoji.com">support@alienemoji.com</a> and
-        we’ll get back to you within <strong>24 hours</strong> on weekdays.
-      </p>
-      <p>
-        For press inquiries, reach out to
-        <a href="mailto:press@alienemoji.com">press@alienemoji.com</a>.
-      </p>
+  <footer class="footer">
+    <div class="grid-3">
+      <div>
+        <strong>Alien Relaxation Station</strong>
+        <p class="lead">A playful way to make calming music—no theory required.</p>
+        <div class="badges">
+          <a class="btn" href="https://apps.apple.com/app/idYOUR_APP_ID">App Store</a>
+          <a class="btn secondary" href="/support.html">Support</a>
+        </div>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul class="clean">
+          <li><a href="/privacy.html">Privacy Policy</a></li>
+          <li><a href="/terms.html">Terms of Use</a></li>
+          <li><a href="mailto:amar@alienemoji.com">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Meta</h3>
+        <ul class="clean">
+          <li><a href="https://github.com/YOUR_GITHUB_USERNAME/alien-relaxation-station-site">Source on GitHub</a></li>
+          <li><a href="/sitemap.xml">Sitemap</a></li>
+          <li><a href="/robots.txt">Robots.txt</a></li>
+        </ul>
+      </div>
     </div>
-  </section>
-
-  <footer>
-    <p>
-      © 2025 Alien Emoji Productions. All rights reserved. ·
-      <a href="https://alienemoji.com/privacy" target="_blank" rel="noopener"
-        >Privacy&nbsp;Policy</a
-      >
-    </p>
+    <p style="margin-top:12px">© 2025 Alien Emoji Productions. All rights reserved.</p>
   </footer>
+</div>
 </body>
 </html>
